@@ -20,7 +20,7 @@ namespace Utilities.Generics
         Task UpdateManyAsync(IEnumerable<TEntity> entities);
 
         Task DeleteAsync(TEntity entity, bool soft_delete = true);
-        Task DeleteManyAsync(IEnumerable<TEntity> entities);
+        Task DeleteManyAsync(IEnumerable<TEntity> entities, bool soft_delete = true);
 
         // Kontrol ve Sayma İşlemleri
         Task<bool> AnyAsync(Expression<Func<TEntity, bool>>? expression = null);
